@@ -21,6 +21,7 @@ public class NewMessageServlet extends ChatServlet {
         if (message != null && !"".equals(message)){
             ChatUser author = activeUsers.get((String) request.getSession().getAttribute("name"));
             //author.setLastInteractionTime(Calendar.getInstance().getTimeInMillis());
+            //пофиксил баг и добавил свою логику
             synchronized (messages){
                 messages.addFirst(new ChatMessage(message , author, Calendar.getInstance().getTimeInMillis()));
                 author.increaseMessageAmount();

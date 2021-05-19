@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Гига-Чад: Письма</title>
+    <title>Наш-Чат: Сообщения</title>
 </head>
 <frameset rows="30, *, 60">
     <frame name="status" src="/chat/status.do">
